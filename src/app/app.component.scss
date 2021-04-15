@@ -173,3 +173,17 @@ ul>.mat-tree-node{
   color: lightgray;
   margin-right: 5px;
 }
+
+.addInputBtn>button{
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background: transparent;
+  position: absolute;
+  right: 5px;
+  top: 7px
+}
+.addInputBtn>button:hover span{
+  color: #7b68ee;
+  cursor: pointer;
+}

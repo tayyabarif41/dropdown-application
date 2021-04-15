@@ -51,11 +51,16 @@ export class AppComponent {
   treeControl = new NestedTreeControl<any>(node => node.children);
   dataSource = new MatTreeNestedDataSource<any>();
   value: any;
+  searchText: string = '';
   @HostListener("document:click", ["$event"]) onDocumentClick(event: any) {
     this.dropdown = false;
   }
   constructor() {
     this.dataSource.data = TREE_DATA;
+  }
+
+  addNewInput() {
+
   }
 
   hasChild = (_: number, node: any) => !!node.children && node.children.length > 0;
